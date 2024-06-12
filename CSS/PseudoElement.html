@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Element</title>
+    <style>
+      p::first-letter {
+        color: red;
+        font-size: 100px;
+      }
+      p::first-line {
+        color: blue;
+      }
+      p::before {
+        content: "hi";
+      }
+      p::after {
+        content: "🐒🐒🐒🐒";
+      }
+      h1::first-letter {
+        color: aqua;
+        font-size: 40px;
+      }
+      li::marker {
+        color: red;
+        font-size: 40px;
+      }
+      p::selection {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Headlines
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non quam
+        perspiciatis excepturi ex nobis recusandae placeat, similique blanditiis
+        molestias, assumenda nam minima labore aut laboriosam earum. Similique
+        minima corrupti temporibus quis quia maiores deserunt blanditiis dolore
+        officia, earum eligendi vel reiciendis expedita dicta facere soluta?
+        Laborum cupiditate distinctio non omnis voluptate facilis unde,
+        exercitationem qui animi dolore ut? Vel, magni sunt? Tempora porro totam
+        veniam possimus expedita temporibus, ex maiores voluptatum unde
+        explicabo natus praesentium maxime quaerat! Beatae, quia obcaecati sed
+        inventore qui tempore. Ex, hic. Provident explicabo voluptatum porro
+        similique in deserunt iste dignissimos eos perferendis? Voluptates
+        labore quibusdam, consectetur minima doloremque optio hic eveniet quod
+        eius, vero consequatur magnam eum et? Soluta quidem ex tenetur in
+        provident aspernatur porro voluptates, amet repudiandae? Voluptatem ad
+        porro doloribus sapiente laborum quidem animi ratione reprehenderit,
+        vero impedit, quae, dignissimos sint? Vero corporis earum reprehenderit,
+        eos explicabo impedit autem magnam similique corrupti itaque ullam
+        deleniti quo qui quas labore, laudantium nihil quos! Omnis veniam illum
+        assumenda corrupti accusamus. Et ea maxime enim voluptatibus earum,
+        voluptas sed deserunt autem reiciendis, qui expedita, fugit quod in
+        itaque vero laborum sapiente. Dolorum, quisquam ab vitae voluptate velit
+        autem, odit laborum libero corporis cupiditate, facilis ipsum.
+      </p>
+    </h1>
+    <ol>
+      <li>items1</li>
+      <li>items2</li>
+      <li>items3</li>
+      <li>items4</li>
+      <li>items5</li>
+      <li>items6</li>
+    </ol>
+  </body>
+</html>

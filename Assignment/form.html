@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <center>
+      <form action="" method="get">
+        <fieldset>
+          <h1>Personal information</h1>
+          <table>
+            <tr>
+              <td>
+                <label for="fname">Full name</label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  placeholder="first name"
+                  required
+                />
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  placeholder="last name"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dob">Date of birth</label>
+              </td>
+              <td>
+                <input type="date" name="dob" id="dob" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="Gen">Gender</label>
+              </td>
+              <td>
+                <input type="radio" name="gen" id="Gen" value="male" />Male
+                <input type="radio" name="gen" id="Gen" value="female" />Female
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="degree">Education</label>
+              </td>
+              <td>
+                <select id="degree" name="degree" required>
+                  <option value="">Select</option>
+                  <option value="High School">High School</option>
+                  <option value="Associate's">Associate's</option>
+                  <option value="Bachelor's">Bachelor's</option>
+                  <option value="Master's">Master's</option>
+                  <option value="Doctorate">Doctorate</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="skls">Skills</label>
+              </td>
+              <td>
+                <input
+                  type="checkbox"
+                  name="skills"
+                  id="skls"
+                  value="html"
+                />HTML
+                <input
+                  type="checkbox"
+                  name="skills1"
+                  id="skls"
+                  value="css"
+                />CSS
+                <input
+                  type="checkbox"
+                  name="skills2"
+                  id="skls"
+                  value="js"
+                />Javascript
+                <input
+                  type="checkbox"
+                  name="skills3"
+                  id="skls"
+                  value="java"
+                />Java
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="resume">Resume</label>
+              </td>
+              <td>
+                <input type="file" name="resume" id="resume" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="address">Address</label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  placeholder="Street address"
+                />
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  placeholder="City"
+                />
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  placeholder="State"
+                />
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  placeholder="Postal code"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="email">Email</label>
+              </td>
+              <td>
+                <input type="email" name="email" id="email" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="phone">Phone</label>
+              </td>
+              <td>
+                <input type="tel" name="phone" id="phone" />
+              </td>
+            </tr>
+          </table>
+          <h1>Previous/current employee</h1>
+          <table>
+            <tr>
+              <td>
+                <label for="cname">Comapany Name</label>
+              </td>
+              <td>
+                <input type="text" name="cname" id="cname" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="djoin">Date of joining</label>
+              </td>
+              <td>
+                <input type="text" name="djoin" id="djoin" />
+              </td>
+            </tr>
+          </table>
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </center>
+  </body>
+</html>

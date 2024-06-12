@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Page</title>
+    <style>
+      body {
+        background-image: url("https://www.pcworld.com/wp-content/uploads/2024/05/Netflix-Hintergrund-1.jpg?resize=1240%2C697&quality=50&strip=all");
+        background-repeat: no-repeat;
+        background-size: 100% 100vh;
+        max-width: 1000px;
+      }
+
+      #netflix-heading {
+        width: 180px;
+        height: 80px;
+        background-image: url("https://1000logos.net/wp-content/uploads/2017/05/Netflix-symbol.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 80px;
+        margin-left: 100px;
+      }
+
+      #lang {
+        width: 100px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid white;
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+      #dropdown {
+        margin-left: 1100px;
+        margin-top: -60px;
+      }
+      #btn {
+        width: 70px;
+        height: 30px;
+        color: white;
+        background-color: red;
+        border: 1px solid red;
+        border-radius: 5px;
+        position: relative;
+        top: -36px;
+        left: 150px;
+      }
+      #heading {
+        color: white;
+        font-size: 60px;
+        position: relative;
+        top: 100px;
+        left: 300px;
+      }
+      #heading2 {
+        color: white;
+        position: relative;
+        font-size: 30px;
+        top: 80px;
+        left: 450px;
+      }
+      #heading3 {
+        color: white;
+        position: relative;
+        font-size: 30px;
+        top: 100px;
+        left: 360px;
+      }
+      input {
+        width: 400px;
+        height: 50px;
+        border: 2px solid black;
+        color: white;
+        background: rgba(15, 12, 12, 0.87);
+        font-size: 15px;
+        position: relative;
+        top: 100px;
+        left: 500px;
+      }
+      #btn-std {
+        width: 130px;
+        height: 53px;
+        color: white;
+        background-color: red;
+        border: 1px solid red;
+        font-size: 15px;
+        font-weight: bolder;
+        position: relative;
+        top: 100px;
+        left: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="netflix-heading"></div>
+    <div id="dropdown">
+      <select name="lang" id="lang">
+        English
+        <option value="English">English</option>
+        <option value="Hindi">Hindi</option>
+      </select>
+      <button id="btn">signup</button>
+    </div>
+    <h1 id="heading">Unlimited movies, TV shows and more</h1>
+    <h2 id="heading2">Watch anywhere. Cancel anytime.</h2>
+    <h2 id="heading3">
+      Ready to watch? Enter your email to create or restart your membership.
+    </h2>
+    <div>
+      <input
+        type="text"
+        placeholder="Email address"
+        class="transparent-input"
+      />
+      <button id="btn-std">Get Started ></button>
+    </div>
+  </body>
+</html>

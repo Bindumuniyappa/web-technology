@@ -1,0 +1,26 @@
+/* descendant selector */
+/* article h1{
+    color:chartreuse;
+    background-color:red;
+} */
+
+/* Child selector */
+
+/* article>h1{
+    color: chartreuse;
+        background-color: red;
+} */
+
+/* Adjacent sibling selctor */
+/* after the parent element */
+/* article+h2{
+    color: chartreuse;
+    background-color: red;
+} */
+
+/* General sibling selector */
+
+article~h2{
+    color: chartreuse;
+        background-color: red;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Box model Assignment</title>
+    <link rel="stylesheet" href="boxmodel.css" />
+    <style>
+      body {
+        background-color: gainsboro;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        color: orange;
+        padding: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          -0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      #btn1 {
+        background-color: rgb(246, 178, 52);
+        padding: 15px 25px;
+        border: 2px solid orange;
+        border-radius: 25px;
+      }
+      #themehead {
+        width: 100px;
+        margin-left: -300px;
+        font-size: 80px;
+      }
+      #para {
+        width: 500px;
+        margin-left: -300px;
+        font-size: 30px;
+      }
+
+      .btn2 {
+        width: 150px;
+        background-color: rgb(203, 28, 46);
+        border: 2px solid rgb(203, 28, 40);
+        padding: 15px 20px;
+        font-weight: bold;
+        border-radius: 10px;
+      }
+      #btnSub1 {
+        /* width: 300px; */
+        /* border: 2px solid black; */
+        margin-top: 350px;
+        margin-left: 200px;
+      }
+      #btnSub2 {
+        /* width: 300px; */
+        /* border: 2px solid black; */
+        margin: 50px;
+      }
+
+      .btn2:hover {
+        background-color: rgb(12, 20, 61);
+        border: 2px solid rgb(12, 20, 61);
+      }
+
+      img {
+        display: block;
+        margin-left: 270px;
+        margin-top: -700px;
+      }
+      main img {
+        width: 100%;
+        height: 330px;
+        object-fit: cover;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1 style="color: black; font-size: 35px">TRUSTM5</h1>
+      <h1>Home</h1>
+      <h1>Product</h1>
+      <h1>Service</h1>
+      <button id="btn1">Demo</button>
+    </nav>
+    <main>
+      <div>
+        <h1 id="themehead">TrustM5 Theme</h1>
+        <p id="para">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id illum
+          libero quam. Cupiditate est corporis commodi. Sed tempore assumenda
+          ratione. Quisquam corrupti nisi in assumenda velit optio aut saepe
+          distinctio cumque eum accusamus et, numquam hic, molestiae quam quas,
+          obcaecati explicabo neque excepturi totam amet ex laboriosam ipsam
+          aperiam. Laborum aliquam in quibusdam? Amet architecto iste veniam
+          facere aliquid assumenda nobis culpa tenetur. Id veritatis, illo
+          nesciunt ipsam amet consequatur nam quam dolor ut cumque a laboriosam
+          sint corporis, perspiciatis asperiores. Iste harum recusandae impedit
+        </p>
+        <img
+          src="https://cdn.pixabay.com/photo/2024/04/17/17/02/box-8702502_640.jpg"
+          alt="cat pic"
+        />
+      </div>
+    </main>
+    <div id="btnsub">
+      <button class="btn2" id="btnSub1">Submit</button>
+      <button class="btn2" id="btnSub2">Cancel</button>
+    </div>
+  </body>
+</html>

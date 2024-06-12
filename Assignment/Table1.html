@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table assignment</title>
+  </head>
+  <style>
+    table,
+    th,
+    thead,
+    td {
+      border: 3px solid black;
+      border-collapse: collapse;
+    }
+    table {
+      width: 500px;
+      height: 300px;
+    }
+    thead,
+    tbody {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <center>
+      <table border="2px">
+        <thead>
+          <tr>
+            <th colspan="6">Time table</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th rowspan="6">Hours</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+          </tr>
+          <tr>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Arts</td>
+          </tr>
+          <tr>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Arts</td>
+          </tr>
+          <tr>
+            <td colspan="5">Lunch</td>
+          </tr>
+          <tr>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Math</td>
+            <td rowspan="2" colspan="2">Science</td>
+          </tr>
+          <tr>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Math</td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+.parent {
+  width: 1000px;
+  height: 1200px;
+  border: 2px solid black;
+  position: relative;
+  top: 100px;
+  left: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.child {
+  width: 300px;
+  height: 200px;
+  border: 2px solid black;
+  margin-top: 50px;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+
+h1{
+    font-size: 40px;
+   text-align: center;
+   background-image: linear-gradient(red,yellow,purple); 
+}
+
+#one{
+    background-image: repeating-linear-gradient(to bottom,orange 0%,orange 35%,white 35%,white 65%,green 65%,green 100%);
+}
+
+#two {
+    background-image: repeating-linear-gradient(to bottom, red 0%, red 35%,blue 35%, blue 65%,goldenrod 65%, goldenrod 100%);
+}
+
+#three {
+    color: white;
+    background-image: repeating-linear-gradient(to right, black 0%, black 35%, yellow 35%, yellow 65%, red 65%, red 100%);
+}
+
+#four {
+    color: white;
+    background-image: repeating-linear-gradient(to bottom, black 0%, black 35%, red 35%, red 65%, gold 65%, gold 100%);
+}
+
+#five {
+    background-image: repeating-linear-gradient(to right, green 0%, green 35%, white 35%, white 65%, red 65%, red 100%);
+}
+
+#six {
+    background-image: repeating-linear-gradient(to bottom, red 0%, red 35%,white 35%, white 65%, blue 65%, blue 100%);
+}
+
+#seven {
+    background-image: repeating-linear-gradient(to bottom, white 0%, white 50%, red 50%, red 100%);
+}
+
+#eight {
+    background-image: repeating-linear-gradient(to bottom, white 0%, white 35%, blue 35%, blue 65%, red 65%, red 100%);
+}
+
+#nine {
+    background-image: repeating-linear-gradient(to right, blue 0%, blue 35%,white 35%, white 65%, red 65%, red 100%);
+}
+
+#ten{
+    background-image: repeating-linear-gradient(to bottom, blue 0%,blue 50%,gold 50%,gold 100%);
+}

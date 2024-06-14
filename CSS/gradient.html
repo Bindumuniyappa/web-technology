@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gradient</title>
+    <style>
+      #gradient {
+        width: 300px;
+        height: 300px;
+        background-color: blue;
+        border: 3px dotted black;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        /* background-image: linear-gradient(
+          to bottom left,
+          red,
+          yellow,
+          aqua,
+          orange
+        ); */
+        /* background-image: linear-gradient(
+          red 0%,
+          red 33.3%,
+          yellow 33.3%,
+          yellow 66.6%,
+          blue 66.6%
+        ); */
+        background-image: repeating-linear-gradient(
+          to top right,
+          black 0%,
+          black 15%,
+          white 10%,
+          white 20%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div id="gradient"></div>
+  </body>
+</html>

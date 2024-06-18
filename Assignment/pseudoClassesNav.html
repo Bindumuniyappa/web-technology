@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo classes nav</title>
+    <style>
+      nav {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: flex;
+        justify-content: space-around;
+      }
+
+      #head1 {
+        color: black;
+      }
+      #head1:hover {
+        color: red;
+        transition: color 2s ease-out 0.2s;
+      }
+
+      #head2 {
+        font-size: 25px;
+      }
+      #head2:hover {
+        font-size: 30px;
+        transition: font-size 2s ease-in 0.2s;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 id="head1">Home</h1>
+        <h1 id="head2">Cart</h1>
+      </nav>
+    </header>
+  </body>
+</html>

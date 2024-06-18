@@ -35,9 +35,64 @@
           white 20%
         );
       }
+      #radial {
+        height: 300px;
+        width: 300px;
+        border: 2px groove blue;
+        margin-top: 100px;
+        margin-left: 500px;
+        /* background-image: radial-gradient(
+          red 0%,
+          red 20%,
+          yellow 20%,
+          yellow 40%,
+          blue 40%,
+          blue 60%
+        ); */
+        background-image: repeating-radial-gradient(
+          brown 0%,
+          brown 3%,
+          yellow 3%,
+          yellow 8%
+        );
+      }
+      #conic {
+        height: 300px;
+        width: 300px;
+        border: 2px solid hotpink;
+        margin-top: -300px;
+        margin-left: 900px;
+        background-image: conic-gradient(
+          blue 0%,
+          blue 5%,
+          black 5%,
+          black 10%,
+          red 10%,
+          red 30%,
+          yellow 30%
+        );
+      }
+
+      #chakra {
+        height: 200px;
+        width: 200px;
+        border: 2px solid blue;
+        margin-top: 100px;
+        margin-left: 100px;
+        border-radius: 50%;
+        background-image: repeating-conic-gradient(
+          blue 0%,
+          blue 2.1%,
+          white 2.1%,
+          white 4.2%
+        );
+      }
     </style>
   </head>
   <body>
     <div id="gradient"></div>
+    <div id="radial"></div>
+    <div id="conic"></div>
+    <div id="chakra"></div>
   </body>
 </html>

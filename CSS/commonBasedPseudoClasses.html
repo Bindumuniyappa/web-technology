@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Common Based Pseudo classes</title>
+    <style>
+      /* div#color p:first-child {
+        color: red;
+        font-size: 50px;
+        font-weight: 400;
+      } */
+
+      /* div#color p:last-child {
+        color: red;
+        font-size: 50px;
+        font-weight: 400;
+      } */
+
+      /* div#color p:first-of-type {
+        color: red;
+        font-size: 50px;
+        font-weight: 400;
+      } */
+      div#color p:last-of-type {
+        color: red;
+        font-size: 50px;
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="color">
+      <h6>hello</h6>
+      <p>i am first to color</p>
+      <div id="black">
+        <h1>hello good afternoon</h1>
+        <article>hi</article>
+        <p>i am first to the color</p>
+        <p>first para of black</p>
+        <p>second para of black</p>
+        <p>third para of black</p>
+      </div>
+      <p>i am in the middle</p>
+      <div id="white">
+        <p>first para of white</p>
+        <p>second para of white</p>
+        <p>third para of white</p>
+        <article>hello</article>
+      </div>
+    </div>
+  </body>
+</html>

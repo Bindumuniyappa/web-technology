@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Pe</title>
+    <link rel="stylesheet" href="PhonePe.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="main-cont">
+      <header>
+        <div id="profile-cont">
+          <div id="profile-photo">
+            <i
+              class="fa-solid fa-user fa-xl"
+              id="fa-user1"
+              style="color: #390f81"
+            ></i>
+          </div>
+          <img id="india" src="icons8-india-48.png" alt="" />
+          <div id="profile-address">
+            <h5>
+              Add Address
+              <i class="fa-solid fa-caret-up fa-rotate-180 fa-sm"></i>
+            </h5>
+            <p>Karnataka</p>
+          </div>
+        </div>
+        <div id="notification-cont">
+          <i class="fa-solid fa-qrcode fa-xl" style="color: white"></i>
+          <i class="fa-regular fa-bell fa-xl" style="color: white"></i>
+          <i class="fa-solid fa-circle-question fa-xl" style="color: white"></i>
+        </div>
+      </header>
+
+      <!-- carousel -->
+
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbmh1bONlnOMpciGsK9CRrZo9V9mCE0poSaA&usqp=CAU"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.phonepe.com/webstatic/7474/static/02bd961b06ce9f6e41f6d5e820c758c2/628b0/hp-banner-pb.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="phonepe-slide">
+              <h6>One Device,One App</h6>
+              <h6>Any payment method</h6>
+              <button class="btn-slide">Get your phonepe pos</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.phonepe.com/webstatic/7474/static/6eba1bff4e20e9bc2aa276c2fe94659f/b912d/hp-banner-aa.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="phonepe-slide">
+              <h6>view statements &</h6>
+              <h6>manage financial data consents</h6>
+              <button class="btn-slide2">View More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- transfer money -->
+
+      <div id="third-cont">
+        <h6>Transfer money</h6>
+        <div id="transfer-money">
+          <div id="user">
+            <div id="user-cont">
+              <i class="fa-regular fa-user fa-xl" style="color: white"></i>
+            </div>
+            <p class="money-text">To Mobile Number</p>
+          </div>
+          <div id="user">
+            <div id="user-cont">
+              <i
+                class="fa-solid fa-building-columns fa-xl"
+                style="color: white"
+              ></i>
+            </div>
+            <p class="money-text">To Bank/UPI ID</p>
+          </div>
+          <div id="user">
+            <div id="user-cont">
+              <i
+                class="fa-solid fa-arrow-rotate-left fa-xl"
+                style="color: white"
+              ></i>
+            </div>
+            <p class="money-text">To Self Account</p>
+          </div>
+          <div id="user">
+            <div id="user-cont">
+              <i
+                class="fa-solid fa-building-columns fa-xl"
+                style="color: white"
+              ></i>
+            </div>
+            <p class="money-text">Check Bank Balance</p>
+          </div>
+        </div>
+        <div id="upi">
+          <p id="upi-text">UPI ID:8852364752@ybl</p>
+          <i class="fa-solid fa-greater-than fa-xs"></i>
+        </div>
+      </div>
+
+      <!-- My qr -->
+      <div class="my-qr">
+        <div class="my-qr-1">
+          <i class="fa-solid fa-qrcode fa-xl" style="color: white"></i> My QR |
+          <p class="upi-text1">UPI ID:8852364752@ybl</p>
+        </div>
+
+        <i class="fa-solid fa-greater-than fa-xs"></i>
+      </div>
+
+      <!-- phonePe wallet -->
+
+      <div id="phonepe-wallet">
+        <div class="wallet-cont">
+          <i class="fa-solid fa-wallet fa-xl"></i>
+          <p>PhonePe Wallet</p>
+        </div>
+        <div class="wallet-cont">
+          <i class="fa-solid fa-gift fa-xl"></i>
+          <p>Rewards</p>
+        </div>
+        <div class="wallet-cont">
+          <i class="fa-solid fa-volume-low fa-xl"></i>
+          <p>Invite Now</p>
+        </div>
+      </div>
+
+      <!-- My upi-->
+      <div class="my-qr">
+        <div class="my-qr-1">
+          <img
+            class="sponsored1"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyKHzaVZT5IQ1jtZQpxZ5OqZbvNJyDCbo90_4Lt6xPIdQwExez-rfMuZj1eR8rM4EckQ&usqp=CAU"
+            alt=""
+          />
+          <p class="upi-text1">PIN-Less Payments</p>
+        </div>
+
+        <i class="fa-solid fa-greater-than fa-xs"></i>
+      </div>
+
+      <!-- Recharge and pay bills -->
+
+      <div id="recharge-cont">
+        <div id="bills">
+          <h6>Recharge & Pay Bills</h6>
+          <button id="btn-bills">My Bills</button>
+        </div>
+        <div id="bills-cont">
+          <div class="bills-i">
+            <i class="fa-solid fa-mobile fa-xl" style="color: #8325b6"></i>
+            <p>Mobile Recharge</p>
+          </div>
+          <div class="bills-i">
+            <i class="fa-solid fa-sack-dollar fa-xl" style="color: #8325b6"></i>
+            <p>Loan Repayment</p>
+          </div>
+          <div class="bills-i">
+            <i class="fa-solid fa-house fa-xl" style="color: #8325b6"></i>
+            <p>House/Home Rent</p>
+          </div>
+          <div class="bills-i">
+            <div id="bills-se">
+              <i class="fa-solid fa-greater-than fa-xs"></i>
+            </div>
+            <p>See All</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sponsored Links -->
+
+      <div id="recharge-cont">
+        <div id="bills">
+          <h6>Sponsored Links</h6>
+        </div>
+        <div id="bills-cont">
+          <div class="bills-i">
+            <img
+              class="sponsored"
+              src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8e/95/a5/8e95a520-3c3d-2738-97ce-e75ced145846/A23RummyAppIcons-0-0-1x_U007epad-0-0-0-85-220.png/512x512bb.jpg"
+              alt=""
+            />
+            <p>A23 Rummy</p>
+          </div>
+          <div class="bills-i">
+            <img
+              class="sponsored"
+              src="https://m.media-amazon.com/images/I/91NgbJDQF-L.png"
+              alt=""
+            />
+            <p>RummyCircle</p>
+          </div>
+          <div class="bills-i">
+            <img
+              class="sponsored"
+              src="data:image/png;base64,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"
+              alt=""
+            />
+            <p>Poonawalla Personal Loan</p>
+          </div>
+          <div class="bills-i">
+            <img
+              class="sponsored"
+              src="https://www.financialexpress.com/wp-content/uploads/2021/07/1-512.jpg"
+              alt=""
+            />
+            <p>Bajaj Finserv</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Insurance -->
+
+      <div id="recharge-cont">
+        <div id="bills">
+          <h6>Insurance</h6>
+        </div>
+        <div id="bills-cont">
+          <div class="bills-i">
+            <i
+              class="fa-solid fa-motorcycle fa-flip-horizontal fa-xl"
+              style="color: #8325b6"
+            ></i>
+            <p>Bike</p>
+          </div>
+          <div class="bills-i">
+            <i
+              class="fa-solid fa-car-side fa-flip-horizontal fa-xl"
+              style="color: #8325b6"
+            ></i>
+            <p>Car</p>
+          </div>
+          <div class="bills-i">
+            <i class="fa-solid fa-hospital fa-xl" style="color: #8325b6"></i>
+            <p>Health</p>
+          </div>
+          <div class="bills-i">
+            <div id="bills-se">
+              <i class="fa-solid fa-greater-than fa-xs"></i>
+            </div>
+            <p>See All</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Travel Bookings -->
+
+      <div id="recharge-cont">
+        <div id="bills">
+          <h6>Travel Bookings</h6>
+        </div>
+        <div id="bills-cont">
+          <div class="bills-i">
+            <i
+              class="fa-solid fa-plane-departure fa-xl"
+              style="color: #8325b6"
+            ></i>
+            <p>Flights</p>
+          </div>
+          <div class="bills-i">
+            <i class="fa-solid fa-bus fa-xl" style="color: #8325b6"></i>
+            <p>Bus</p>
+          </div>
+          <div class="bills-i">
+            <i class="fa-solid fa-train fa-xl" style="color: #8325b6"></i>
+            <p>Trains</p>
+          </div>
+          <div class="bills-i">
+            <i class="fa-solid fa-hotel fa-xl" style="color: #8325b6"></i>
+            <p>Hotels</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- courosel -->
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbmh1bONlnOMpciGsK9CRrZo9V9mCE0poSaA&usqp=CAU"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.phonepe.com/webstatic/7474/static/02bd961b06ce9f6e41f6d5e820c758c2/628b0/hp-banner-pb.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="phonepe-slide">
+              <h6>One Device,One App</h6>
+              <h6>Any payment method</h6>
+              <button class="btn-slide">Get your phonepe pos</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.phonepe.com/webstatic/7474/static/6eba1bff4e20e9bc2aa276c2fe94659f/b912d/hp-banner-aa.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="phonepe-slide">
+              <h6>view statements &</h6>
+              <h6>manage financial data consents</h6>
+              <button class="btn-slide2">View More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- switch -->
+
+      <div id="recharge-cont">
+        <div id="bills">
+          <h6>Switch</h6>
+        </div>
+        <div id="bills-cont">
+          <div class="bills-i">
+            <img
+              class="sponsored"
+              src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202012/fastag_logo_660_260820090256_291220064029.jpg?size=1200:675"
+              alt=""
+            />
+            <p>Buy FASTag</p>
+          </div>
+          <div class="bills-i">
+            <i
+              class="fa-solid fa-train-subway fa-xl"
+              style="color: #8325b6"
+            ></i>
+            <p>metro</p>
+          </div>
+          <div class="bills-i">
+            <i class="fa-solid fa-wallet fa-xl" style="color: #8325b6"></i>
+            <p>NCMC recharge</p>
+          </div>
+          <div class="bills-i">
+            <div id="bills-se">
+              <i class="fa-solid fa-greater-than fa-xs"></i>
+            </div>
+            <p>See All</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- sponsored games -->
+      <div id="recharge-cont">
+        <div id="bills">
+          <h6>Sponsored Games</h6>
+        </div>
+        <div id="bills-cont">
+          <div class="bills-i">
+            <img
+              class="sponsored"
+              src="https://play-lh.googleusercontent.com/JitmIfRzB_8xjmZ8o4mMFvD2g0f40h6Nl3YzDAlKK9Hl30mWrdFjfyu8_jRnhdrNa8kk"
+            />
+            <p>Junglee poker</p>
+          </div>
+          <div class="bills-i">
+            <img
+              class="sponsored"
+              src="https://play-lh.googleusercontent.com/I8Vjsn_RdW2meco0shrgUfqDJYRxB3qEvBi1D57H46gSoC2iAly1rulFQW45UNVQOqqv=w240-h480-rw"
+              alt=""
+            />
+            <p>Taj Rummy</p>
+          </div>
+          <div class="bills-i">
+            <img
+              class="sponsored"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATcAAACiCAMAAAATIHpEAAAAilBMVEX/////Hkb/DD7/g5P/ADX/ADj/0dX/CDz/kJ7/ADn/ADL/ADD/wsr/usP/zdT/+Pr/8vT/c4T/4+j/eor/Ynj/f4//ACX/F0L/yc//ACv/sbv/i5r/6Ov/ACH/oKz/8/X/WnH/19z/QmD/UWv/prH/L1H/KE3/O1r/N1f/qrT/ABn/bID/s73/l6ShWUOOAAAD4ElEQVR4nO3aWVejMACG4YAgUlqhrUprnVrX0Vn+/98bkrAkIa29sedM8z5XNiF4+A6BLAgBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHGN2e2G6vT9Uu6yEWCztIiE+m4Outquqb1Xah6jznvq6vttmEpuyN6v2I7dq7xZCXK7NkmQuxDxp2mXJZDdrW5V3sSOblKe/tG91lUWW4sGofCjsyonMLbFKnoRYxvrvOnlfqWal06yRnXtuudlRt07lKLf6pxhya36uN7JZiLnVN0blc/1FbqlMecgtihLZPMTcony4QrebjnNTcZi5Reky0NyS675um3+RW7yUh1m5RcUszNyyTV/34nTTUW7yt5tbFAWR26ZIcyue+qOrquzLj/P0R5PT9V2atvdh/ayOc3LLt+JHmsd2y+Lcciurqry1LlzfRI1Pq5um0+ZQWVxVjw866VQP2Jzc6vfmkPJ+aJzP2pbn5sK68PyzLd5Z96Hx3BOlbhDrX/N1onRnkWM6MUuNxE99QSdi51bvdGk1sW6jcW7Zhf61uFSeutNkf0WIuXXPcLubenIrFvZpHto3RtzMvULMLdGzJbubjnOrX5zTbLr5lpxEBJhbrPpfZc1DPbklM+c0Xc61XBsIMLfmhdi4dwa9437qnGXaBR1qbnok4nRTT26LSmuHZjf9/SaHdSHmJkcij0439eSWFMovXTFMZkN9L6gnvnHd+3LrKi5V2d9+wpa/ijBzi5Jy6HXH5jYUqPFJmLlNxSRyyw7ndt33az1rDTK3eLNyu+lXuf3uiyYqpsBya3vne7uEZHTWw7mV/f3ZLpKElVv9/Gbm1//8MrfXfrSX6o2dsHJLVzNzuFsYa0SHc+t3Ior2MF9ul7sbafd66gv8JkZus9J4ITRdbn5cbk/t4C3Ou6N8uU2LWkquTn2B38TMzdzDyrbH5qZXPuvJS78+6c1Nl2VnmdvwpJLzrSNzy+o6ztfPxoMsuNwWw5vxQxyZ25/i7WX+au70h5eb+Nl1VLlue+T9Nnbuudn7MjK3fmdQ7hMMuXn2Zfbm5tmXkesm7bv6LHKz9wFlbk99RxVmbp59wH25PY73AaWu7Cxys/ed1c7eu85RLfvOrSnY+Hskb26efWfTuea2yYY8yG0PT24rnYzaHSW3PTy5CZWVWrUlt318uamwkmn/J7mN+XJTO1P6Ozhy28P+LrpQuZXrLE53qvp3cvi76MZ6nNvou2jLZOM2+A/ZX9rftnsszV960/7TqvZ8h98ULtxzer7Dt/6Ju2ENAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+P0Di9Q7j8leHEoAAAAASUVORK5CYII="
+              alt=""
+            />
+            <p>MPL</p>
+          </div>
+          <div class="bills-i">
+            <img
+              class="sponsored"
+              src="https://cdn.dribbble.com/users/8057720/screenshots/15759490/ludo-game-logo.jpg"
+              alt=""
+            />
+            <p>WinZo Ludo</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Apps by phonepe -->
+
+      <div id="recharge-cont">
+        <div id="bills">
+          <h6>Apps by PhonePe</h6>
+        </div>
+        <div id="bills-cont">
+          <div class="bills-i">
+            <img
+              class="sponsored"
+              src="https://play-lh.googleusercontent.com/87GEovTOpwWXe6d6kXV5qvG2-2B7lhMPe6rPV3TdoovL-tBWfF20zunDKlrTeOblag"
+            />
+            <p>Share Market</p>
+          </div>
+          <div class="bills-i">
+            <img
+              class="sponsored"
+              src="https://play-lh.googleusercontent.com/DIj92f1Tkfxm8rOTqPhlMtGsz8bboRju5v2V5ykxdGfpIAN4kTbNFfgBxpcFt5nY3KQ"
+              alt=""
+            />
+            <p>Business</p>
+          </div>
+          <div class="bills-i">
+            <img
+              class="sponsored"
+              src="https://media.istockphoto.com/id/1289609842/vector/grocery-paper-bag-with-food-design-reusable-produce-bag-with-healthy-vegan-vegetarian-food.jpg?s=612x612&w=0&k=20&c=9hzs1nojO_7HU5pbtQFjDrrPyBiXrhQFPG8HaEPKdaw="
+              alt=""
+            />
+            <p>Grocery</p>
+          </div>
+          <div class="bills-i">
+            <img
+              class="sponsored"
+              src="data:image/jpeg;base64,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"
+              alt=""
+            />
+            <p>Indus Appst..</p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div id="footer-cont">
+          <div>
+            <i
+              class="fa-solid fa-house fa-lg"
+              style="color: white; margin-left: 10px"
+            ></i>
+            <p>Home</p>
+          </div>
+          <div>
+            <i
+              class="fa-solid fa-bag-shopping fa-lg"
+              style="color: white; margin-left: 10px"
+            ></i>
+            <p>Stores</p>
+          </div>
+          <div>
+            <i
+              class="fa-solid fa-shield-heart fa-lg"
+              style="color: white; margin-left: 25px"
+            ></i>
+            <p>Insurance</p>
+          </div>
+          <div>
+            <i
+              class="fa-solid fa-indian-rupee-sign fa-lg"
+              style="color: white; margin-left: 15px"
+            ></i>
+            <p>Wealth</p>
+          </div>
+          <div>
+            <i
+              class="fa-solid fa-arrows-left-right fa-lg"
+              style="color: white; margin-left: 10px"
+            ></i>
+            <p>History</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- bootstrap scripts -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width={device-width}, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: black;
+      }
+      h1 {
+        font-size: 50px;
+        text-transform: uppercase;
+        color: wheat;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, red);
+        animation: text 5s linear infinite;
+        animation-direction: alternate-reverse;
+        /* line-height: 0.7em; */
+      }
+
+      @keyframes text {
+        0%,
+        5%,
+        10%,
+        15%,
+        20%,
+        25%,
+        30%,
+        35%,
+        40%,
+        45%,
+        50%,
+        55%,
+        60%,
+        65%,
+        70%,
+        75%,
+        80%,
+        85%,
+        90%,
+        95% {
+          color: yellow;
+          text-shadow: 0 0 2px red;
+        }
+        3%,
+        8%,
+        13%,
+        18%,
+        23%,
+        28%,
+        33%,
+        38%,
+        43%,
+        48%,
+        53%,
+        58%,
+        63%,
+        68%,
+        73%,
+        78%,
+        83%,
+        88%,
+        93%,
+        98% {
+          color: hotpink;
+          text-shadow: 0 0 2px silver, 2px 2px 4px red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Web Technology</h1>
+  </body>
+</html>

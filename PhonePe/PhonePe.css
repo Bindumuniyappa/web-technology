@@ -1,0 +1,304 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+   
+}
+
+#main-cont{
+    width: 400px;
+    height: 220vh;
+    border: 1px solid black;
+    background-color: black;
+}
+
+header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#390f81;
+    position:sticky;
+    z-index: 2;
+    top: 0;
+}
+
+#fa-user1{
+    margin-top: -5px;
+    margin-left: 0px;
+}
+
+#profile-cont{
+    /* border: 1px solid red; */
+}
+
+#notification-cont{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+#profile-cont{
+    width: 190px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#profile-photo{
+    width: 40px;
+    height: 35px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center ; 
+}
+
+#india{
+    width: 20px;
+    margin-left: -25px;
+    margin-top: 15px;
+}
+
+#profile-address{
+    color: white;
+    line-height: 3px;
+}
+
+
+#carouselExampleSlidesOnly{
+    /* border: 1px solid black; */
+}
+
+.phonepe-slide{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -100px;
+    font-size: 10px;
+}
+
+.btn-slide{
+    background-color: #390f81;
+    color: white;
+    border-radius: 5px;
+    width: 150px;
+    font-size: 10px;
+}
+
+.btn-slide2 {
+    background-color: #922edf;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    font-size: 10px;
+}
+
+#third-cont{
+    border: 1px solid black;
+    background-color:#0f061e;
+    color: white;
+    border-radius: 10px;
+}
+
+#transfer-money{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+#user-cont{
+    width: 35px;
+    height: 35px;
+    background-color: #a140d9;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    /* border: 1px solid blue; */
+
+}
+
+.fa-user{
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+.fa-building-columns {
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+.fa-arrow-rotate-left {
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+.money-text{
+    width: 80px;
+    height: 50px;
+    font-size: 15px;
+    margin-left: 0px;
+    text-align:center;
+}
+
+
+#upi{
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e414e;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+#upi-text{
+    margin-top: 10px;
+}
+
+.fa-greater-than{
+    margin-left:20px;
+}
+
+.my-qr{
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    background-color: #0f061e;
+    border-radius: 10px;
+    color: white;
+}
+
+.my-qr-1{
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upi-text1{
+    margin-left: 5px;
+    margin-top: 18px;
+}
+
+
+/* PhonePe Wallet */
+
+#phonepe-wallet{
+    /* border: 1px solid red; */
+    /* height: 50px; */
+    margin-top: 15px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wallet-cont{
+    width: 125px;
+    height: 70px;
+    background-color: #092467;
+    border-radius: 10px;
+    text-align:center;
+}
+
+.fa-wallet{
+    margin-top: 20px;
+}
+
+.fa-gift {
+    margin-top: 20px;
+}
+
+.fa-volume-low {
+    margin-top: 20px;
+}
+/* Recharge and pay bills */
+
+#recharge-cont{
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    color: white;
+    background-color: #0f061e;
+    /* display: flex; */
+}
+
+#bills{
+    display: flex;
+    justify-content: space-between;
+}
+
+#btn-bills{
+    width:70px;
+    border-radius:20px;
+    background-color: #0f061e;
+    color: white;
+    font-size: 10px;
+    border: 1px solid #0f061e;
+}
+
+#bills-cont{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bills-i{
+    width: 100px;
+   text-align: center;
+    /* border: 1px solid white; */
+}
+
+#bills-se{
+    width: 40px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #8325b6;
+    margin-left: 30px;
+    text-align:justify;
+}
+
+.sponsored{
+    width: 40px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.sponsored1{
+    width: 70px;
+        height: 20px;
+        border-radius: 5px;
+}
+
+#footer-cont{
+    width: 400px;
+    border: 1px solid #390f81;
+    background-color: #250956;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    bottom: 0;
+    z-index: 2;
+}
+
+
+

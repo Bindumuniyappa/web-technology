@@ -12,7 +12,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    filter: opacity(0.9);
+    filter: opacity(1.0);
 }
 
 #logo-img{
@@ -89,7 +89,7 @@ nav{
     text-align:left;
 }
 
-
+/* 2nd section styling */
 #second-cont{
     height: 400px;
     /* border: 2px solid red; */

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      #grid-container {
+        width: 60vw;
+        height: 80vh;
+        background-color: black;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; /*px,fr,auto,%*/
+        grid-template-rows: 100px auto;
+        /* row-gap: 10px;
+        column-gap: 10px; */
+        gap: 10px;
+      }
+      .grid-items {
+        background-color: peru;
+        border: 2px solid red;
+      }
+
+      #grid-items1 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+      }
+
+      #grid-items2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+
+      #grid-items3 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+      #grid-items4 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+      }
+
+      #grid-items5 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 7;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div#grid-container>div#grid-items$.grid-items{grid-boxes$}*8 -->
+    <div id="grid-container">
+      <div id="grid-items1" class="grid-items">grid-boxes1</div>
+      <div id="grid-items2" class="grid-items">grid-boxes2</div>
+      <div id="grid-items3" class="grid-items">grid-boxes3</div>
+      <div id="grid-items4" class="grid-items">grid-boxes4</div>
+      <div id="grid-items5" class="grid-items">grid-boxes5</div>
+      <div id="grid-items6" class="grid-items">grid-boxes6</div>
+      <div id="grid-items7" class="grid-items">grid-boxes7</div>
+      <div id="grid-items8" class="grid-items">grid-boxes8</div>
+    </div>
+  </body>
+</html>

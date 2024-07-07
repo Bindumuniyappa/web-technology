@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation1</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .bg {
+        position: relative;
+        height: 100vh;
+        background-image: url("city.jpg");
+        background-size: cover;
+        background-position: 0 0;
+        background-repeat: repeat-x;
+        overflow: hidden;
+        animation: animate 20s linear infinite;
+      }
+
+      .car {
+        position: absolute;
+        bottom: -60px;
+        left: 20px;
+      }
+
+      .aeroplane {
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        top: 100px;
+        left: 0px;
+        animation: aeroplane 10s linear infinite;
+      }
+      /* @keyframes aeroplane {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 100% 0;
+        }
+      } */
+
+      @keyframes aeroplane {
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+        25% {
+          top: 70px;
+          left: 400px;
+        }
+        50% {
+          top: 20px;
+          left: 600px;
+        }
+        75% {
+          top: 70px;
+          left: 900px;
+        }
+        100% {
+          top: 0px;
+          left: 1350px;
+        }
+      }
+
+      @keyframes animate {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 100% 0;
+        }
+      }
+      .vid {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+      <img
+        class="aeroplane"
+        src="https://clipart-library.com/images/8cxKqXjKi.png"
+        alt=""
+      />
+      <img class="car" src="car (1).png" alt="" />
+    </div>
+  </body>
+</html>

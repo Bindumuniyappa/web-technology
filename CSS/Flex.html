@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <style>
+      body {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      #flex-container {
+        height: 70vh;
+        width: 70vw;
+        border: 5px solid red;
+        color: black;
+        display: flex;
+        flex-direction: row; /*row-reverse,colomn,colomn-reverse*/
+        justify-content: space-between; /* flex-start,center,flex-end*/
+        align-items: center; /*flex-start,center,flex-end*/
+        /* flex-wrap: wrap; */
+      }
+      .flex-items {
+        width: 100px;
+        height: 100px;
+        color: black;
+        background-color: yellow;
+        border: 2px groove peru;
+      }
+      #flex-items1 {
+        order: 2;
+        flex-grow: 1;
+      }
+      #flex-items2 {
+        order: 3;
+        align-self: flex-end;
+      }
+      #flex-items3 {
+        order: 5;
+        flex-shrink: 10;
+      }
+      #flex-items4 {
+        order: 1;
+      }
+      #flex-items5 {
+        order: 4;
+        /* flex-shrink: 10; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="flex-container">
+      <div id="flex-items1" class="flex-items">flex-box1</div>
+      <div id="flex-items2" class="flex-items">flex-box2</div>
+      <div id="flex-items3" class="flex-items">flex-box3</div>
+      <div id="flex-items4" class="flex-items">flex-box4</div>
+      <div id="flex-items5" class="flex-items">flex-box5</div>
+    </div>
+  </body>
+</html>

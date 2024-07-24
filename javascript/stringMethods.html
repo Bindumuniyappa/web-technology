@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // String methods
+
+      let str = "Hello";
+      console.log((str[0] = "k"));
+      console.log(str);
+
+      //it will take number as an parameter and gives the string charecter of given number
+
+      console.log(str.charAt(2));
+
+      //it will take charecter as an parameter abd gives the index of that charecter
+
+      console.log(str.indexOf("h"));
+
+      //it will replace the part of string in to an new one
+
+      console.log("llo", "y");
+
+      //it will merge two or more strings
+
+      console.log(str.concat("world").concat("hi"));
+
+      console.log(str.repeat(3));
+
+      //slice will extract the part of the string and gives the new one
+      // slice will take one or two parameters
+      //if one means from their(index) onwards it include all the characters of the string
+      //if one it includes starting parameters and excludes ending parameter
+      console.log(str.slice(1, 5));
+
+      console.log(str.toLowerCase());
+      console.log(str.toUpperCase());
+
+      let str1 = "           world";
+      //trimstart will remove the void space which are preceding(front) to the string
+      //console.log(str).trimstart());
+      //trimend will remove void space which are after(end) the string
+      console.log(str1.trimEnd());
+      console.log(str1);
+      //trim will remove void space of both front and back of the string
+      console.log(str1.trim());
+
+      console.log(str.endsWith("h"));
+      console.log(str.startsWith("h"));
+
+      console.log(str.includes("kl"));
+
+      //   paadstart will take two parameters ,first one indicators
+      //   of maximize the length of the string and second one add the number infront of string
+      let strnum = "00";
+      console.log(str.padStart("4", "6"));
+
+      //   paadstart will take two parameters ,first one indicators
+      //   of maximize the length of the string and second one add the number end of string
+
+      let strnum1 = "20";
+      console.log(strnum1.padEnd("5", "0"));
+
+      //null is error or bug in js because it is value typed both variabled pointing to diff memory address,
+      //   if any changes done in variable it wont effect the other the other that is why it is primitive datatype
+      //but type of null is object(non-primitive data type)
+      let g = null;
+      let u = 1;
+      g = u;
+      g = null + 25;
+      console.log(g);
+      console.log(u);
+      console.log(typeof null);
+    </script>
+  </body>
+</html>

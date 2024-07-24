@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- output methods -->
+    <script>
+      // document.write
+      let a = "please read js";
+      document.write(a);
+      document.write("<br>");
+      document.write("hello");
+      document.write("afternoon");
+      document.write("all the best");
+      document.write("<br>");
+      document.write(1 + 2);
+      document.write("<br>");
+
+      //   document.writeln
+      document.writeln("one");
+      document.writeln("two");
+      document.writeln("three");
+      document.writeln("four");
+
+      //   console.log()
+
+      let l = 10;
+      console.log(l);
+      console.log("Hello world");
+      console.log(3 == "3");
+
+      //   alert---alert as highest priority among confirm,log,promt
+
+      alert("Battery is low..plug in charger"); //only ok button
+
+      //confirm
+
+      confirm("plugged in...charging..."); //ok and cancel button
+
+      //prompt
+
+      let name = "Sneha";
+      let g = prompt("enter anything.."); //it is takes input from the user
+      alert(g + " " + name + "😘");
+      console.log(g);
+
+      let age = prompt("enter the age");
+      if (age >= 18) {
+        console.log("Go to heaven...");
+      } else {
+        console.log("Need to grow....");
+      }
+    </script>
+  </body>
+</html>

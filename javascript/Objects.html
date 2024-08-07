@@ -5,5 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      // using literal way
+      let obj = {
+        id: 1,
+        name: "abc",
+      };
+      console.log(obj);
+
+      //fetch
+
+      console.log(obj.id);
+      console.log(obj["id"]);
+
+      //add
+      console.log((obj.age = 21));
+      console.log(obj);
+
+      //delete
+
+      console.log(delete obj.name);
+      console.log(obj);
+
+      //update
+
+      console.log((obj.age = 200));
+      console.log(obj);
+
+      //nested object
+
+      let myObj = {
+        id: 1,
+        mobile: {
+          color: "black",
+          name: "samsung",
+          price: 20000,
+        },
+      };
+      console.log(myObj);
+
+      console.log(myObj["mobile"]["price"]);
+      console.log(myObj.mobile.price);
+
+      delete myObj.mobile;
+      console.log(myObj);
+
+      let obj1 = myObj;
+      console.log(delete obj1);
+      console.log(myObj);
+    </script>
+  </body>
 </html>

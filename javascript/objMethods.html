@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //window is an global object which accepts only an global variable, function,methods
+      console.log(window);
+
+      //this keyword points to the window object as well as it stores the address of the window
+
+      console.log(this);
+
+      console.log(this === window);
+
+      //   why var is global
+
+      //    window accepts only global variables,where window is global
+
+      var a = 100;
+      console.log(window.a);
+      console.log(window);
+
+      //window won't accept let and const variable as global...
+      let b = 200;
+      console.log(window.b);
+      console.log(window);
+      console.log(b);
+
+      const c = 300;
+      console.log(window.b);
+      console.log(window);
+
+      //   object methods
+
+      let myObj = [
+        {
+          id: 1,
+        },
+        {
+          id: 2,
+        },
+      ];
+      console.log(myObj);
+      console.log(myObj[0]);
+
+      //   freeze
+
+      let freezeObj = {
+        compName: "infosys",
+        noOfEmp: 2000,
+        place: "electronic city",
+      };
+      console.log(freezeObj);
+
+      console.log(Object.freeze(freezeObj));
+
+      console.log(freezeObj);
+
+      console.log(Object.isFrozen(freezeObj));
+
+      //seal
+
+      let sealObj = {
+        compName: "infosys",
+        noOfEmp: 2000,
+        place: "electronic city",
+      };
+
+      console.log(sealObj);
+      console.log(Object.seal(sealObj));
+      console.log((sealObj.empSal = 100000));
+      console.log(sealObj);
+
+      console.log(delete sealObj.compName);
+      console.log(sealObj);
+
+      console.log((sealObj.compName = "test yantra"));
+      console.log(sealObj);
+      console.log((sealObj.noOfEmp = 3000));
+      console.log(sealObj);
+
+      //assign
+      let a1 = {
+        id: 1,
+        pincode: 580012,
+      };
+      let b1 = {
+        id: 2,
+        place: "hubli",
+      };
+      let c1 = {
+        id: 3,
+        name: "abc",
+      };
+      let res = Object.assign(a1, b1, c1);
+      console.log(res);
+
+      let key = Object.keys(res);
+      console.log(key);
+
+      let value = Object.values(res);
+      console.log(value);
+
+      //   convert object to array
+
+      let object = {
+        team: "India",
+        captain: "kohli",
+        members: 11,
+      };
+      console.log(object);
+      console.log("before the entries");
+      let entries = Object.entries(object);
+      console.log("after the entries");
+      console.log(entries);
+
+      //   math
+      let math = Math;
+      console.log(math);
+
+      //OTP
+
+      console.log(math.ceil(100.2));
+      console.log(math.floor(100.2));
+
+      let randonNum = math.ceil(math.random() * 10000).toString(9);
+      console.log(randonNum);
+
+      console.log(math.max(100, 290));
+      console.log(math.min(100, 290));
+
+      console.log(math.pow(2, 3));
+      console.log(math.cbrt(125));
+
+      //date
+
+      let date = new Date();
+      console.log(date, typeof date);
+
+      console.log(date.getDate());
+      console.log(date.getDay());
+      console.log(date.getFullYear());
+      console.log(date.getHours());
+      console.log(date.getMinutes());
+      console.log(date.getSeconds());
+
+      let date1 = new Date(2024, 3, 25, 14, 31, 10);
+      console.log(date1);
+
+      console.log(date.toLocaleString());
+      console.log(date.DateString);
+
+      //settimeout and setinterval
+
+      setTimeout(() => {
+        console.log("statement one");
+        setTimeout(() => {
+          console.log("statement two");
+        }, 2000);
+      }, 3000);
+
+      // setInterval(() => {
+      //   console.log("hello world");
+      // }, 2000);
+
+      let person = {
+        place: "bangalore",
+        print: function print() {
+          console.log(`name=${this.Name} num=${this.num} place=${this.place}`);
+        },
+      };
+
+      let me = Object.create(person);
+      me.Name = "Bindu";
+      me.num = 123;
+      me.print();
+
+      // console.log(me);
+    </script>
+  </body>
+</html>

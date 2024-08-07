@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //1st program on scope
+      // let b = "good morning";
+      // function p() {
+      //   const ab = "hello";
+      //   console.log(ab); //hello
+      //   function q() {
+      //     console.log(this.b); //good morning
+      //     console.log(ab); //hello
+      //   }
+      //   q();
+      // }
+      // p();
+
+      //2nd program
+      // function q() {
+      //   let a = 10;
+      //   let b = 20;
+      //   function r() {
+      //     console.log(a); //10
+      //   }
+      //   r();
+      //   function s() {
+      //     console.log(b); //20
+      //   }
+      //   s();
+      // }
+      // q();
+
+      //3rd program
+
+      function x() {
+        var ax = "ABC";
+        function y() {
+          let bx = "PQR";
+          function z() {
+            console.log(bx);
+            console.log(ax);
+          }
+          z();
+        }
+        y();
+      }
+      x();
+
+      // 4th program
+    </script>
+  </body>
+</html>

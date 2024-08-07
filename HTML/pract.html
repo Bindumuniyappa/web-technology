@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #clock {
+        width: 200px;
+        height: 100px;
+        background-image: radial-gradient(red, bisque);
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      button {
+        width: 80px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid rgb(98, 185, 240);
+        background-color: rgb(77, 188, 235);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      1
+      <span>2</span>
+    </h1>
+
+    <h1 id="clock"></h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <button id="pause">Pause</button>
+
+    <script>
+      setInterval(() => {
+        let date = new Date();
+        hours = date.getHours();
+        mins = date.getMinutes();
+        secs = date.getSeconds();
+        ampm = hours >= 12 ? "PM" : "AM";
+        hours = hours % 12;
+        document.getElementById("clock").innerHTML =
+          hours + ":" + mins + ":" + secs + ampm;
+      });
+
+      let start = document.getElementById("start");
+    </script>
+  </body>
+</html>

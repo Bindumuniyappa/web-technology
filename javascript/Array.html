@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+  </head>
+  <body>
+    <script>
+      //array methods
+
+      let array = [1, "hi", null, undefined, 10n, true, {}, function () {}];
+      console.log(array);
+
+      console.log(array[0]);
+      console.log((array[0] = 2));
+      console.log(array);
+
+      let obj = {};
+
+      console.log(Array.isArray(obj));
+      console.log(Array.isArray(array));
+
+      //   array methods
+
+      let myArray = [100, 100, "good morning", 500];
+      console.log(myArray);
+
+      //   1.push
+      //push method in array will add the values from the behind of an array
+      //for push method we should pass n number of parameters
+      console.log(myArray.push(700, 900));
+      console.log(myArray);
+
+      //2.pop
+      //pop method in array will remove a value from the behind of an array
+      //it wont accept any parameters
+      console.log(myArray.pop());
+      console.log(myArray);
+
+      // 3.shift
+      //shift method in array will remove the values from the starting of an array
+      //for shift method we should pass n number of parameters
+      console.log(myArray.shift());
+      console.log(myArray);
+
+      // 4.unshift
+      //unshift method in array will add the values from the starting of an array
+      //for unshift method we should pass n number of parameters
+      console.log(myArray.unshift(10000));
+      console.log(myArray);
+
+      //5.splice
+      //splice in array will take two or three parameters
+      //when it is two-first one indicates the index,second one indicates how many values are deleted from that index
+      //when it is three-first one indicates the index,second one second one indicates how many values are deleted
+      //from that index,third one how many values should add from removed values
+
+      let mySplice = [1, 3, 5, 7];
+      console.log(mySplice.splice(2, 2, "add"));
+      console.log(mySplice);
+
+      //push,pop,shift,unshift,splice all these methods affect the original array .....
+
+      // slice
+
+      let mySlice = [333, 444, 222, 111];
+      mySlice.length = 2;
+      console.log(mySlice);
+      console.log(mySlice.slice(0, 2));
+      console.log(mySlice.slice(1, 3));
+      console.log(mySlice);
+      console.log((mySlice[50] = 1000));
+      console.log((mySlice[46] = 2000));
+      console.log(mySlice);
+      console.log(mySlice.includes(442));
+      console.log(mySlice.reverse());
+
+      //for of
+      let ofFor = [1, 2, 3];
+      for (let value of ofFor) {
+        console.log(value);
+      }
+
+      //for in
+      for (let index in ofFor) {
+        console.log(index);
+      }
+
+      let array1 = [4, 5, 6, 7];
+      let each = array1.forEach((value1, index1) => {
+        console.log(`the index is ${index1} and value is ${value1}`);
+      });
+
+      //sort
+
+      let mySort = [4, 1, 11, 44, 600, 2, 22];
+      console.log(mySort.sort());
+
+      let sort = mySort.sort((a, b) => {
+        return a - b;
+      });
+      console.log(sort);
+
+      console.log(sort.toString());
+      console.log(sort.join());
+      console.log(sort.concat(mySort, mySlice, sort));
+
+      let nested = [22, 24, 26, [1, 2, 3], [6, 8, 9]];
+      console.log(nested);
+      console.log(nested.flat());
+
+      //map,filter,reduce
+
+      let clothes = [550, 1000, 2000, 100, 200];
+      let map = clothes.map((values) => {
+        return values * 2;
+      });
+      console.log(map);
+
+      //filter
+      let filter = map.filter((values) => {
+        return values > 1000;
+      });
+      console.log(filter);
+
+      //reduce
+
+      let reduce = clothes.reduce((acc, val) => {
+        return acc + val;
+      });
+      console.log(reduce);
+
+      //spread operator
+
+      let destruct = [11, 22, 32, "bangalore"];
+      let [aa, bb, cc, dd] = destruct;
+      console.log(dd);
+      console.log(bb + 10);
+      aa = aa + 100;
+      console.log(aa);
+
+      let objDes = {
+        name: "bhoomi",
+        role: "heroin",
+        movie: "where is akash",
+      };
+      let { name, role, movie } = objDes;
+      console.log(name);
+      console.log(role);
+      console.log(movie);
+    </script>
+  </body>
+</html>

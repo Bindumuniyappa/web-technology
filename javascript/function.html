@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var a = 10;
+      function calculate() {
+        console.log(a);
+      }
+      calculate();
+
+      let age = 25;
+      function vary() {
+        let name = "bindu";
+        console.log(name);
+      }
+      vary();
+      console.log(age);
+
+      var x = 10;
+      let y = 20;
+      const z = 30;
+      console.log(x, y, z);
+      {
+        console.log(z); //bcz z is declared globally
+        var x1 = 40;
+        let y1 = 50;
+        const z1 = 60;
+        console.log(z1); //z1 is block scope can not be access outside the block
+      }
+      console.log(x1); //x1 is not block scope we can access everywhere;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="clock"></div>
+    <h1 id="clock1"></h1>
+
+    <script>
+      setInterval(function () {
+        date = new Date();
+        hours = date.getHours();
+        minutes = date.getMinutes();
+        seconds = date.getSeconds();
+        ampm = hours >= 12 ? "PM" : "AM";
+        hours = hours % 12; //why hours divided by 12?
+        hours = hours ? hours : 12; //why hours is 12 when it is 0
+        document.getElementById("clock").innerHTML =
+          hours + ":" + minutes + ":" + seconds + " " + ampm;
+        // let clock = document.getElementById("clock");
+        // clock.innerHTML = `${this.hours}:${this.minutes}:${this.seconds} ${this.ampm}`;
+        // Update the clock every second
+      });
+
+      setInterval(() => {
+        date = new Date();
+        hours = date.getHours();
+        minutes = date.getMinutes();
+        seconds = date.getSeconds();
+        ampm = hours >= 12 ? "PM" : "AM";
+        hours = hours % 12;
+        hours = hours ? hours : 12;
+        document.getElementById("clock1-+").innerHTML =
+          hours + ":" + minutes + ":" + seconds + " " + ampm;
+      });
+    </script>
+  </body>
+</html>

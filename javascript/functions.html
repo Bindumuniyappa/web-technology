@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // var ab = 10;
+      // let bc = 20;
+      // const ca = 30;
+      // console.log(window.ab); //10
+      // console.log(window);
+      // console.log(window.bc); //ud
+      // console.log(window);
+
+      // function key() {
+      //   console.log(this.ab);
+      //   console.log(this.bc);
+      //   console.log(this.ca);
+      // }
+
+      //iife
+
+      // (function () {
+      //   console.log("first");
+      // })(),
+      //   (function () {
+      //     console.log("second");
+      //   })();
+
+      //callback function
+
+      // function test(callback, a) {
+      //   // callback();
+      //   console.log("hello " + a);
+      //   callback();
+      // }
+      // function demo() {
+      //   console.log("i am here");
+      // }
+      // test(demo, "good morning");
+
+      //example for call stack
+      // var a = 10;
+      // let b = 200;
+      // const c = 300;
+      // console.log(b);
+      // console.log(a, c);
+      // function demo() {
+      //   console.log(this.b);
+      //   var x = 400;
+      //   console.log(x);
+      // }
+      // demo();
+
+      //nested function
+
+      function gp() {
+        let x = 100;
+        let y = 200;
+        // console.log(x);
+        function p() {
+          let z = 300;
+          console.log(y);
+          function c() {
+            console.log(z);
+            console.log(x);
+          }
+          c();
+        }
+        p();
+      }
+      gp();
+    </script>
+  </body>
+</html>
